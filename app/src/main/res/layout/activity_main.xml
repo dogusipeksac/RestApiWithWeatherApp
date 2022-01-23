@@ -42,8 +42,8 @@
         android:layout_width="match_parent"
         android:layout_margin="10dp"
         android:layout_height="wrap_content"/>
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerview"
+    <ListView
+        android:id="@+id/listview"
         android:layout_width="match_parent"
         android:layout_below="@id/search_edittext"
         android:layout_margin="10dp"
