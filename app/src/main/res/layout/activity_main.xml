@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/get_city_id_button"
+            android:layout_weight="1"
+            android:text="Get city id"
+            android:layout_width="0dp"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/get_weather_by_CityId_button"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:text="Get Weatherid"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/get_weather_CityName_button"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:text="Get City Name"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <EditText
+        android:hint="city name"
+        android:id="@+id/search_edittext"
+        android:layout_below="@id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_below="@id/search_edittext"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
